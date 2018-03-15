@@ -1,0 +1,648 @@
+<div style="width: 100%; margin: 25px auto; max-width: 960px !important;">
+    <link rel='stylesheet' type='text/css' media='all' href="slide_effect.css">
+    <link rel='stylesheet' type='text/css' media='all' href="team_photos_slide_effect.css">
+    <style>
+	.modal_BG {
+		width:100%;
+		height:100%;
+		background-color: rgba(0,0,0,0.7);
+		filter: blur(6px);
+	}
+	/* The Modal (background) */
+	.modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 99; /* Sit on top */
+		padding-top: 100px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+		
+	}
+	/* Modal Content */
+	.modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%;
+	}
+	/* The Close Button */
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	</style>
+    <div id='round-photo'>
+    	<!--Image1-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a  id="myBtn" ref="" target='' rel=''>
+                    <div class='img'>
+                        <img src='' />
+                    </div>
+                    <div class='info'>
+                        <h3>Hari<br>Singh</h3>
+                        <p>Director/<br>Chairman</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="modal_BG">
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                        <p>Some text in the Modal..</p>
+                </div>
+            </div>
+        </div>
+        <!--Image2-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='SS.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Sumit<br>Singh</h3>
+                        <p>Managing<br>Director</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image3-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='HS.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Harpinder<br>Singh</h3>
+                        <p>Project Manager<br>PaySimple </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    	<!--Image4-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='' />
+                    </div>
+                    <div class='info'>
+                        <h3>Amit<br>Ahuja</h3>
+                        <p>Project Manager<br>ProfitRhino</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image5-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='JG.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>John<br>Goswami</h3>
+                        <p>Team Lead<br>ProfitRhino</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image6-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='DS.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Davinder<br>Singh</h3>
+                        <p>Senior Software<br>Engineer<br>ProfitRhino</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image7-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='' />
+                    </div>
+                    <div class='info'>
+                        <h3>Ruchi<br>Rani</h3>
+                        <p>Senior Software<br>Engineer<br>ProfitRhino</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image8-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='MB.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Maneesh<br>Badhan</h3>
+                        <p>Senior Software<br>Engineer<br>ProfitRhino</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image9-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='' />
+                    </div>
+                    <div class='info'>
+                        <h3>Prerna<br>Jaswal</h3>
+                        <p>Senior Quality<br>Analyst<br>ProfitRhino</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image10-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='AM.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Akanksha<br>Mahajan</h3>
+                        <p>Quality<br>Analyst<br>ProfitRhino</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image11-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='KS.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Kamalpreet<br>Singh</h3>
+                        <p>Quality<br>Analyst<br>ProfitRhino</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image12-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='PR.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Preeti<br>Rawat</h3>
+                        <p>Team Lead<br>Mobile Team<br>ProfitRhino</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image13-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='KD.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Kapil<br>Dev</h3>
+                        <p>Senior iOS<br>Developer<br>ProfitRhino</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    	<!--Image14-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='ED.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Ekta<br>Dushanj</h3>
+                        <p>Android<br>Developer<br>ProfitRhino</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image15-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='VG.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Vikas<br>Gautam</h3>
+                        <p>Senior Software<br>Engineer<br>ProfitRhino</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image16-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='VR.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Virender<br>Rana</h3>
+                        <p>DevOps Engineer<br>ProfitRhino</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image17-->
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a href='' target='' rel=''>
+                    <div class='img'>
+                        <img src='YB.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Yadwinder<br>Bhullar</h3>
+                        <p>Web Designer<br>ProfitRhino</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image18--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Anthony&lt;br&gt;White data-href='2.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='2_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Anthony<br>White</h3>
+                        <p>Account</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image19--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Samantha&lt;br&gt;Ferrari data-href='3.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='3_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Samantha<br>Ferrari</h3>
+                        <p>Copywriter</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image20--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Samantha&lt;br&gt;Ferrari data-href='3.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='3_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Samantha<br>Ferrari</h3>
+                        <p>Copywriter</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image21--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Elisa&lt;br&gt;Johnson data-href='1.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='1_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Elisa<br>Johnson</h3>
+                        <p>Marketing</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image22--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Anthony&lt;br&gt;White data-href='2.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='2_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Anthony<br>White</h3>
+                        <p>Account</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image23--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Samantha&lt;br&gt;Ferrari data-href='3.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='3_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Samantha<br>Ferrari</h3>
+                        <p>Copywriter</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    	<!--Image24--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Elisa&lt;br&gt;Johnson data-href='1.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='1_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Elisa<br>Johnson</h3>
+                        <p>Marketing</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image25--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Anthony&lt;br&gt;White data-href='2.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='2_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Anthony<br>White</h3>
+                        <p>Account</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image26--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Samantha&lt;br&gt;Ferrari data-href='3.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='3_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Samantha<br>Ferrari</h3>
+                        <p>Copywriter</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image27--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Elisa&lt;br&gt;Johnson data-href='1.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='1_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Elisa<br>Johnson</h3>
+                        <p>Marketing</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image28--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Anthony&lt;br&gt;White data-href='2.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='2_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Anthony<br>White</h3>
+                        <p>Account</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image29--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Samantha&lt;br&gt;Ferrari data-href='3.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='3_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Samantha<br>Ferrari</h3>
+                        <p>Copywriter</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image30--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Elisa&lt;br&gt;Johnson data-href='1.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='1_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Elisa<br>Johnson</h3>
+                        <p>Marketing</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image31--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Elisa&lt;br&gt;Johnson data-href='1.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='1_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Elisa<br>Johnson</h3>
+                        <p>Marketing</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image32--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Anthony&lt;br&gt;White data-href='2.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='2_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Anthony<br>White</h3>
+                        <p>Account</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image33--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Samantha&lt;br&gt;Ferrari data-href='3.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='3_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Samantha<br>Ferrari</h3>
+                        <p>Copywriter</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    	<!--Image34--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Elisa&lt;br&gt;Johnson data-href='1.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='1_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Elisa<br>Johnson</h3>
+                        <p>Marketing</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image35--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Anthony&lt;br&gt;White data-href='2.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='2_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Anthony<br>White</h3>
+                        <p>Account</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image36--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Samantha&lt;br&gt;Ferrari data-href='3.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='3_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Samantha<br>Ferrari</h3>
+                        <p>Copywriter</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image37--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Elisa&lt;br&gt;Johnson data-href='1.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='1_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Elisa<br>Johnson</h3>
+                        <p>Marketing</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image38--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Anthony&lt;br&gt;White data-href='2.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='2_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Anthony<br>White</h3>
+                        <p>Account</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image39--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Samantha&lt;br&gt;Ferrari data-href='3.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='3_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Samantha<br>Ferrari</h3>
+                        <p>Copywriter</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Image40--
+        <div class='rp-item'>
+            <div class='info-item round slide_effect to-top-left-corner'>
+                <a data-title=Elisa&lt;br&gt;Johnson data-href='1.jpg' target='' rel=''>
+                    <div class='img'>
+                        <img src='1_250x250.jpg' />
+                    </div>
+                    <div class='info'>
+                        <h3>Elisa<br>Johnson</h3>
+                        <p>Marketing</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        -->
+    </div>
+    <script>
+	// Get the modal
+	var modal = document.getElementById('myModal');
+	
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+	
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+	
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+		modal.style.display = "block";
+	}
+	
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+		modal.style.display = "none";
+	}
+	
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+	</script>
+</div>
