@@ -5,7 +5,6 @@
    Author: Vikas Gautam
 */
 
-
 function myteam_post() {
     $args = array(
       'public' => true,
